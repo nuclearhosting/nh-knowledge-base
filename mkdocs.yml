@@ -1,0 +1,34 @@
+site_name: Nuclear.Hosting Knowledge Base
+theme: readthedocs
+highlightjs: true
+hljs_languages:
+    - yaml
+    - rust
+    - php
+    - bash
+    - ruby
+markdown_extensions:
+    - admonition
+nav:
+    - Home: index.md
+    - How to start using Webhosting: start.md
+    - Websites: websites.md
+    - MySQL Databases: mysql_databases.md
+    - E-Mails: emails.md
+    - Domains: domains.md
+    - DNS: dns.md
+    - 1-Click Installer: oneclick.md
+    - Wordpress: wordpress.md
+    - Payments & Billing: billing.md
+    - Files / Data manipulation: files.md
+    - FTP/SFTP: ftp.md
+    - GIT: git.md
+    - SSH / Chroot: chroot.md
+    - PHP Frameworks: frameworks.php
+    - Tutorials: tutorials.md
+    - Video Tutorials: videos.md
+    - PHP Scripting: php_scripting.md
+    - Fair Usage Policy: fup.md
+    - Glossary of Terms: glosarry.md
+    - Backups: backups.md
+    - Security: security.md
