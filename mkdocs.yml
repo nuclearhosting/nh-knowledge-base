@@ -13,6 +13,7 @@ nav:
     - Home: index.md
     - How to start using Webhosting: start.md
     - Websites: websites.md
+    - HTTPS & Secured Web Access: https.md
     - MySQL Databases: mysql_databases.md
     - E-Mails: emails.md
     - Domains: domains.md
