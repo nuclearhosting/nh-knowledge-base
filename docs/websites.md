@@ -92,3 +92,15 @@ The procedure is the same like when you creating a webhosting for a new 2nd leve
 | Full-featured webhosting  | ✕ | ✕ | ✓ |
 
 ## Aliases
+
+# Websites & Webhosting
+
+## Why we do not support caching servers (memcached, redis)
+
+On our webservers we do not support caching servers like Memcached or Redis.
+
+There is a big security problem with shared hosting and caching servers. Caching servers uses memory that is shared by all customers on the server. Then it is not such a problem to use the content of this shared memory to penetrate a foreign site.
+
+Unfortunately, many shared hosting companies do not address this risk. But for us, safety comes first.
+
+On the other side, the absence of caching servers support we have fast SSD/NVMe disks on all our servers. We are also able to connect for you a special RAM-Disk which is a dedicated piece of RAM memory connected as a regular directory (dedicated for you) where you can place your cache files. The advantage of this solution is that it's very similar to memcached or redis server where cached data are placed into RAM.
