@@ -1,12 +1,11 @@
 site_name: Nuclear.Hosting Knowledge Base
+site_url: https://nuclear.hosting/help/
+site_description: Nuclear.Hosting Knowledge Base
+site_author: Nuclear.Hosting www.nuclear.hosting
+google_analytics: ['UA-92972843-3', 'nuclear.hosting/help/']
+
 theme: readthedocs
-highlightjs: true
-hljs_languages:
-    - yaml
-    - rust
-    - php
-    - bash
-    - ruby
+
 markdown_extensions:
     - admonition
 nav:
