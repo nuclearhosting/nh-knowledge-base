@@ -110,6 +110,14 @@ Updating Wordpress installation is also very easy. You can update whole Wordpres
 $ wp core update
 ```
 
+### Disable WP-CRON
+
+To disable internal Wordpress CRON execution (read more bellow) using WP-CLI utility run:
+
+```
+$ wp config set DISABLE_WP_CRON true
+```
+
 ### More useful WP-CLI commands
 
 To list of all WP-CLI useful features please visit WP-CLI Guide (link bellow), or you can use WP-CLI Help by entering:
@@ -138,3 +146,26 @@ We consider these functions to be very useful:
 ## More WP-CLI options
 
 A [WP-CLI guide](https://make.wordpress.org/cli/handbook/) is available on wordpress.org, look for [recommendations](https://make.wordpress.org/cli/handbook/quick-start/) or a [list of all commands](https://developer.wordpress.org/cli/commands/).
+
+## WP-CRON
+
+WordPress uses its own WP-Cron mechanism to run various regular maintenance tasks. The whole functionality is provided by the wp-cron.php script, which runs by default every time you visit the site.
+
+However, this solution has major disadvantages. Given a large number of requests from site visitors (including robots), this script runs with unnecessary server load. In addition, it is called like an external webserver request that occupies another PHP process, the maximum number of which is limited for each domain. Both can have a significant negative impact on the application's response, as well as server load.
+
+For these reasons, we recommend you to turn off the default WP-Cron method and call wp-cron.php by using our system cron function.
+TODOOOOOO
+
+To disable the default wp-cron method, insert the following line at the end of the wp-config.php file:
+
+```
+define ('DISABLE_WP_CRON', true);
+```
+
+or use WP-CLI as described above.
+
+Now, you have to setup system cron to regularly call wp-cron.php script on your website. Log-in to your [Hosting Control Panel](https://my.nuclear.hosting), go to ```Sites``` and in the left-hand menu click on ```Cron Jobs``` and then ```Add new Cron job```.
+
+Fill the form like picture shows. In the ```Parent Website``` field choose your domain where you want to configure cron. Into ```Minutes``` field put a random minute value between range 0 - 59. In the ```Command to run``` field replace ```example.com``` by your domain name. Finish setup by clicking on the ```Save``` button.
+
+![WP-Cron setup](img/wp_cron_setup.png)

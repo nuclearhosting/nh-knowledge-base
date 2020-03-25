@@ -404,7 +404,6 @@ Enter your name, email address and the password for that email you set in the [H
 
 You are done! All is configured. Now just click on the ```Done``` button.
 
-![Windows Mail Configuration](img/email_windows_mail_autoconf_3.png)
 
 ### How to configure Windows (Live) Mail (manual configuration)
 
