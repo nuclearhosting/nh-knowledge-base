@@ -24,8 +24,6 @@ Start by logging in to the [Hosting Control Panel](https://my.nuclear.hosting). 
 !!! note
 	**Read more about [how to start using webhosting](start/)**.
 
-## Useful articles
-
 ## Important links
 
  * [Nuclear.Hosting Community Board](https://community.nuclear.hosting)
@@ -35,3 +33,6 @@ Start by logging in to the [Hosting Control Panel](https://my.nuclear.hosting). 
  * [Payment Gateway](https://pay.nuclear.hosting)
 
 ## Follow us
+
+<a href="https://facebook.com/nuclear.hosting"><img src="img/facebook.png" width=120></a>
+<a href="https://twitter.com/hostingnuclear"><img src="img/twitter.png" width=120></a>

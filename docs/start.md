@@ -101,3 +101,19 @@ To use Hosting Wizard login to your [Control Panel](https://my.nuclear.hosting) 
 By using a Hosting Wizard you can also install a Wordpress to your domain. Just check the ```Install Wordpress``` field and ```Create DB``` as well.
 
 ![Webhosting Wizard](img/webhosting_wizard.png)
+
+## How to preview and test your website before DNS change
+
+You can preview and test your website on Nuclear.Hosting before you change your DNS settings. All you have to do is change resolving domain names to IP addresses locally on your computer. Configuration depends on your operating system.
+
+  - First you need to find out what is your servers IP address. Log in to your Hosting Control Panel and in the Dashboard view you will find your webserver IP address.
+  - Locate and edit the ```hosts``` file on your computer. Its location depends on your operating system. The following are common locations for this file:
+```
+  Microsoft Windows: c:\windows\system32\drivers\etc\hosts
+  Linux, BSD, Android etc.: /etc/hosts
+  Mac OS X: /private/etc/hosts
+```
+  You have to edit ```hosts``` file as Administrator - with admin rights/permissions.
+
+  - Put into ```hosts``` file content like follow: ```1.2.3.4	example.com www.example.com``` where ```1.2.3.4``` is your webserver IP address you find in your Hosting Control Panel (like described on point 1.) and where ```example.com``` is, put your domain name you want to test from your new hosting.
+  - Save and close ```hosts``` file, open your internet browser and enter your domain name. Website is loaded from webhosting on our servers.
