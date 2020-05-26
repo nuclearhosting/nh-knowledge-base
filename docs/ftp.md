@@ -47,7 +47,7 @@ For proper connection you also need to use a software (client) which supports SF
 A new FTP account can be created in your [Hosting Control Panel account](https://my.nuclear.hosting).
 
 !!! note
-	Number of FTP accounts is limited for Free Membership and Unlimited for VIP Membership.
+	Number of FTP accounts is limited for Basic Membership and Unlimited for VIP Membership.
 
 Log in to your [Hosting Control Panel account](https://my.nuclear.hosting), navigate to ```Sites``` section and in the left-hand menu click on the ```FTP-Accounts```. In the list you can see all your already created FTP accounts. To create a new one, just click on the ```Add new FTP-User```.
 

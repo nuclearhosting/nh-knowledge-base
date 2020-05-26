@@ -18,7 +18,7 @@ A subdomain is created like a standalone webhosting but its directory is located
  - custom PHP version with custom PHP settings
  - custom password protected AWStats statistics
  - custom redirects
- - Available to both VIP and Free memberships
+ - Available to both VIP and Basic memberships
 
 **Subdomain Vhost Limitations:**
 
@@ -43,7 +43,7 @@ It is like a regular 2nd level domain alias. This subdomain is not physicaly cre
  - can be redirected / routed to specific directory on the primary domain
  - different redirection types (by mod_rewrite) like: no flag, R, L, R+L, R=301+L
  - Let's Encrypt SSL Support (optinaly can be turned off for specific subdomain)
- - Available to both VIP and Free memberships
+ - Available to both VIP and Basic memberships
 
 **Subdomain Alias limitations:**
 

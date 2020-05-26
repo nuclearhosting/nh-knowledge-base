@@ -9,7 +9,7 @@ For example, if you type www.google.com into the address bar of your web browser
 To load a content on your domain from any server you have to point your domain name to this particular server's IP address in its DNS zone. DNS zone for domain can be created on any DNS server you have access to and which allows you to create a DNS zone for your domain. After setting up a DNS zone for domain you need to change your DNS Name servers of your domain to those DNS servers (where DNS zone is created).
 
 !!! note
-	Nuclear.Hosting offers a DNS NameServers & online DNS records management for your domains free of charge for both memberships (Free and VIP).
+	Nuclear.Hosting offers a DNS NameServers & online DNS records management for your domains free of charge for both memberships (Basic and VIP).
 
 ## What is a DNS record
 

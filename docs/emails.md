@@ -655,7 +655,7 @@ Outbound messages are scanned by antivirus control and by checking the forbidden
 !!! important
 	This server is not intended for sending bulk messages, automated sending (from some devices), or sending messages from web applications.
 
-**The amount of messages sent per user is limited to 60 messages per hour for Free membership and to 300 messages per hour for VIP messages** (including messages sent from webmail are included), and a copy is also considered as a separate message. If the user exceeds this limit, the SMTP server will reject the next attempt to send it for the remainder of the hour with the 5xx error code. At the same time, the maximum number of recipients is limited in one message (per 100). These limits are designed to prevent undesired use of the server, which could lead to the delay of sending other users' messages. For sending messages from web applications use PHP mail() function.
+**The amount of messages sent per user is limited to 60 messages per hour for Basic membership and to 300 messages per hour for VIP messages** (including messages sent from webmail are included), and a copy is also considered as a separate message. If the user exceeds this limit, the SMTP server will reject the next attempt to send it for the remainder of the hour with the 5xx error code. At the same time, the maximum number of recipients is limited in one message (per 100). These limits are designed to prevent undesired use of the server, which could lead to the delay of sending other users' messages. For sending messages from web applications use PHP mail() function.
 
 ## Troubleshooting e-mails problems
 

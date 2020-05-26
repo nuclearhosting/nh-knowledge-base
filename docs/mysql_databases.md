@@ -91,7 +91,7 @@ We recommend to use mysqli instead of mysql extension. The extension mysql is av
 
 ## MySQL Remote Access
 
-Remote access to MySQL database is allowed only for VIP users. There is no exception possible in this limitation for Free users.
+Remote access to MySQL database is allowed only for VIP users by using SSH Tunnel. There is no exception possible in this limitation for Basic users.
 
 Remote access is possible throught SSH tunnel. The connection is routed via SSH to the webserver and from there is redirected to the appropriate database server.
 
