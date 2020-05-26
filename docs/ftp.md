@@ -38,7 +38,7 @@ Before you can connect to SFTP/SCP or even to use ```rsync```, you have to [crea
 !!! note
 	SFTP/SCP/SSH is available only for VIP Membership.
 
-You will also need a **server hostname** and **port**. Both can be found on your Dashboard page after logging in to Hosting Control Panel. The credentials to your FTP and SFTP are different - they are not the same!
+You will also need a **server hostname** and **port**. Server hostname you can find on your Dashboard page after logging in to Hosting Control Panel. The port can be found in the SFTP/SSH accounts overview table in Hosting Control Panel - ```Sites``` - ```Shell-User```. The credentials to your FTP and SFTP are different - they are not the same!
 
 For proper connection you also need to use a software (client) which supports SFTP/SCP protocol. For example Filezilla or WinSCP. If you are familiar with command-line and you are a Linux or MacOS X user, you can also use CLI SSH/SFTP client.
 

@@ -23,12 +23,9 @@ nav:
     - Files / Data manipulation: files.md
     - FTP/SFTP: ftp.md
     - GIT: git.md
-    - SSH / Chroot: chroot.md
-    - PHP Frameworks: frameworks.php
-    - Tutorials: tutorials.md
-    - Video Tutorials: videos.md
-    - PHP Scripting: php_scripting.md
+    - SSH / Chroot: shell.md
+    - Video Tutorials: video.md
+    - PHP Scripting: php.md
     - Fair Usage Policy: fup.md
-    - Glossary of Terms: glosarry.md
     - Backups: backups.md
     - Security: security.md
