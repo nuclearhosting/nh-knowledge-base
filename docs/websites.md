@@ -122,4 +122,5 @@ Some application causing False Positive results from the WAF and those kind of r
 Bellow you can find well-known False positive WAF cases which we can solve easily by disabling particular WAF rules for your website. To do that, please contact our Support team.
 
 **Well-known False positive WAF issues:**
-  - Divi Builder for Wordpress
+
+ - Divi Builder for Wordpress
