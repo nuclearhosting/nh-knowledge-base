@@ -111,6 +111,10 @@ On the other side, the absence of caching servers support we have fast SSD/NVMe 
 
 ### What is WAF
 
+A ```web application firewall (WAF)``` is an application firewall for HTTP applications. It applies a set of rules to an HTTP conversation. By inspecting HTTP traffic, it can prevent attacks stemming from web application security flaws, such as SQL injection, cross-site scripting (XSS), file inclusion, and security misconfigurations.
+
+On our servers we are using [ModSecurity](https://www.modsecurity.org/) as WAF.
+
 ### Known issues of incompatibilities of WAF
 
 Some application causing False Positive results from the WAF and those kind of requests are blocked. For those applications is not possible to fix the rules which are causing False positive cases. The only solution is to turn off those rules particulary or turn off WAF for whole application (**not recommended!**). To investigate those cases contact our Support team and with co-operation we decide what is the best solution of your particular situation.
