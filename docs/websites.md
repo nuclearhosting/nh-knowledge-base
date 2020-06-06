@@ -4,9 +4,9 @@ Webhosting services are provided to a specific 2nd level domain (example.com). A
 
 You can create an unlimited number of other subdomains on your domain (my.example.com). Nuclear.Hosting provide **3 types of subdomains** which are sligthly different in usage.
 
-### 1. Subdomain Vhost
+## 1. Subdomain Vhost
 
-#### Description
+### Description
 
 A subdomain is created like a standalone webhosting but its directory is located under the main domain hosting directory structure. The primary domain will have access to this subdomain directory (eg. with PHP script).
 
@@ -26,13 +26,13 @@ A subdomain is created like a standalone webhosting but its directory is located
  - primary domain have access to subdomains data on the server (eg. within PHP script)
  - it depends / is linked with primary domain
 
-#### How to create
+### How to create
 
 In the [Hosting Control Panel](https://my.nuclear.hosting) navigate to ```Sites``` section and in the left-hand menu click on the ```Subdomain (Vhost)```. To create a new subdomain click on the green ```Add new subdomain```.
 
-### 2. Subdomain Alias
+## 2. Subdomain Alias
 
-#### Description
+### Description
 
 It is like a regular 2nd level domain alias. This subdomain is not physicaly created, it is just an alias which can be redirected (HTTP 301 code) either to primary domain or another domain / URL. Also can be pointed to specific directory on your primary domain FTP account.
 
@@ -51,13 +51,13 @@ It is like a regular 2nd level domain alias. This subdomain is not physicaly cre
  - primary domain have access to subdomains data on the server (eg. within PHP script)
  - no individual PHP settings or PHP versions (the same PHP version and configuration is applied like on primary domain)
 
-#### How to create
+### How to create
 
 In the [Hosting Control Panel](https://my.nuclear.hosting) navigate to ```Sites``` section and in the left-hand menu click on the ```Subdomain for website```. To create a new subdomain click on the green ```Add new Subdomain```.
 
-### 3. Standalone subdomain
+## 3. Standalone subdomain
 
-#### Description
+### Description
 
 Standalone subdomain is like a regular webhosting for 2nd level domain. It is independent on any other domain. It is a full-featured webhosting. **Standalone subdomains are available only for VIP membership users.**
 
@@ -74,11 +74,11 @@ Standalone subdomain is like a regular webhosting for 2nd level domain. It is in
 
  - no shared files / data / folders with primary or any other domain
 
-#### How to create
+### How to create
 
 The procedure is the same like when you creating a webhosting for a new 2nd level domain. In the [Hosting Control Panel](https://my.nuclear.hosting) navigate to ```Sites``` section and in the left-hand menu click on the ```Website```. To create a new subdomain click on the green ```Add new website```.
 
-### Subdomains comparsion
+## Subdomains comparsion
 
 |     | Subdomain Vhost | Subdomain Alias | Subdomain Standalone  |
 |:---| ------------- |:-------------:|:-----:|
@@ -93,7 +93,9 @@ The procedure is the same like when you creating a webhosting for a new 2nd leve
 
 ## Aliases
 
-# Websites & Webhosting
+🤷‍♂️ Nothing yet, sorry.
+
+## Websites & Web Hosting
 
 ### Why we do not support caching servers (memcached, redis)
 
@@ -104,3 +106,16 @@ There is a big security problem with shared hosting and caching servers. Caching
 Unfortunately, many shared hosting companies do not address this risk. But for us, safety comes first.
 
 On the other side, the absence of caching servers support we have fast SSD/NVMe disks on all our servers. We are also able to connect for you a special RAM-Disk which is a dedicated piece of RAM memory connected as a regular directory (dedicated for you) where you can place your cache files. The advantage of this solution is that it's very similar to memcached or redis server where cached data are placed into RAM.
+
+## WAF - Web Application Firewall
+
+### What is WAF
+
+### Known issues of incompatibilities of WAF
+
+Some application causing False Positive results from the WAF and those kind of requests are blocked. For those applications is not possible to fix the rules which are causing False positive cases. The only solution is to turn off those rules particulary or turn off WAF for whole application (**not recommended!**). To investigate those cases contact our Support team and with co-operation we decide what is the best solution of your particular situation.
+
+Bellow you can find well-known False positive WAF cases which we can solve easily by disabling particular WAF rules for your website. To do that, please contact our Support team.
+
+**Well-known False positive WAF issues:**
+  - Divi Builder for Wordpress
