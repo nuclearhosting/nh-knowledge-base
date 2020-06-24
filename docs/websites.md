@@ -18,13 +18,12 @@ A subdomain is created like a standalone webhosting but its directory is located
  - custom PHP version with custom PHP settings
  - custom password protected AWStats statistics
  - custom redirects
- - Available to both VIP and Basic memberships
+ - Available for both VIP and Basic memberships
 
 **Subdomain Vhost Limitations:**
 
- - does not support SSL certificates (even SSL Lets Encryp't)
  - primary domain have access to subdomains data on the server (eg. within PHP script)
- - it depends / is linked with primary domain
+ - is linked with primary domain
 
 ### How to create
 
@@ -43,11 +42,11 @@ It is like a regular 2nd level domain alias. This subdomain is not physicaly cre
  - can be redirected / routed to specific directory on the primary domain
  - different redirection types (by mod_rewrite) like: no flag, R, L, R+L, R=301+L
  - Let's Encrypt SSL Support (optinaly can be turned off for specific subdomain)
- - Available to both VIP and Basic memberships
+ - Available for both VIP and Basic memberships
 
 **Subdomain Alias limitations:**
 
- - it depends / is linked with primary domain
+ - is linked with primary domain
  - primary domain have access to subdomains data on the server (eg. within PHP script)
  - no individual PHP settings or PHP versions (the same PHP version and configuration is applied like on primary domain)
 
@@ -73,6 +72,7 @@ Standalone subdomain is like a regular webhosting for 2nd level domain. It is in
 **Standalone subdomain limitations:**
 
  - no shared files / data / folders with primary or any other domain
+ - you need a free hosting slot availbe to create a standalone subdomain (within max. domains limits of your account)
 
 ### How to create
 
@@ -82,18 +82,77 @@ The procedure is the same like when you creating a webhosting for a new 2nd leve
 
 |     | Subdomain Vhost | Subdomain Alias | Subdomain Standalone  |
 |:---| ------------- |:-------------:|:-----:|
-| SSL Let's Encrypt | ✕ | ✓ | ✓ |
-| SSL Support | ✕ | ✕ | ✓ |
+| SSL Let's Encrypt | ✓ | ✓ | ✓ |
+| SSL Support | ✓ | ✕ | ✓ |
 | Custom PHP version | ✓ | ✕ | ✓ |
 | Custom PHP Configuration | ✓ | ✕ | ✓ |
 | Data accesible from primary domain  | ✓ | ✓ | ✕ |
 | Depends on primary domain | ✓ | ✓ | ✕ |
 | Custom redirects | ✓ | ✓ | ✓ |
 | Full-featured webhosting  | ✕ | ✕ | ✓ |
+| Requires available hosting slot  | ✕ | ✕ | ✓ |
 
 ## Aliases
 
-🤷‍♂️ Nothing yet, sorry.
+### What are domain aliases
+
+An alias is a web server setting that assigns multiple domain names to a single virtual host in server configuration. It allows to display one web site under several domain names.
+
+Alias can be configured in your [Hosting Control Panel](https://my.nuclear.hosting), under ```Sites``` section and then in the left-hand menu click on the ```Aliasdomain for website```.
+
+### How to configure new domain alias
+
+There is several way how to configure domain aliases with several different options regarding usage and behaviour you are expecting.
+
+![Alias settings](img/domain_alias.png)
+
+#### The same web presentations on different domains
+
+You will use this option if you own different domains and you want everyone to have the same website.
+
+Another use-case is when you have a domain pointed to another web hosting, you plan to transfer this domain to Nuclear.Hosting but with a newer website or newer content - you can dev a new version on hosting created on NH, on the original domain name without changing DNS record and just use an alias domain (or alias subdomain) to build a new version of the website and after that, you simply change DNS record of that domain.
+
+**Example:** You have two domain names: ```example1.com``` and ```example2.com```. A domain ```example1.com``` has created a web hosting with website uploaded and is considered as *main* domain. The same content you want to see on the ```example2.com``` without creating an another standalone hosting and duplicating all website files to there, which is unnecessary. To achieve desired behaviour you need to configure ```example2.com``` as alias for ```example1.com``` and change a coresponding DNS record for ```example2.com``` (point domain to our servers).
+
+To configure such domain alias, navigate to your [Hosting Control Panel](https://my.nuclear.hosting), ```Sites``` and ```Aliasdomain for website```, click on the ```Add new Aliasdomain```.
+
+Complete the form as described bellow:
+
+ - ```Domain``` enter your alias domain name
+ - ```Parent website``` is a target (website to show when you enter alias domain name) for your alias
+ - ```Redirect Type``` keep unchanged (```No redirect```)
+ - ```Redirect path``` keep empty
+ - ```Auto-Subdomain``` change value when you want to use wildcard-domain within your alias (*.youralias.tld) or www subdomain (www.youralias.tld) or just simple (none value) original alias domain name (name you entered into ```Domain``` field)
+
+ Now just click on the ```Save``` button.
+
+!!! note
+	Do not forget to configure DNS zone of your alias domain and point to NH servers. The procedure is the same as for poiting domain for a regular hosting, described [here](/domains/#how-to-point-my-domain-to-nuclearhosting).
+
+#### Different web presentations on different domains on one hosting
+
+FIXME: Toto nejde ako na CH, musi sa to nasmerovat do zlozky v "Cesta presmerovani"
+
+Thanks to aliases, you can run several different web presentations on different domains on one hosting. This solution is suitable in a situation where creating or purchasing standalone hosting for a given domain name would be unnecessary.
+
+In this case you can point your alias domain to existing subdomain on already hosted domain.
+
+**Example:** You have hosting created for a domain ```example.com``` and another domains ```mydomain.net``` and ```yourdomain.org``` where you want to create a simple websites without creating a new standalone hosting accounts for them. To do this, you need to create an two folders on ```example.com``` FTP space, let say ```mydomain``` and ```yourdomain``` in the main ```/web``` folder. Upload your websites to those folders. Configure domain ```mydomain.net``` as an alias for ```example.com``` and configure ```Redirect Path``` to folder ```/mydomain/``` and repeat the same for ```yourdomain.org``` but enter ```/yourdomain/``` to ```Redirect Path```. Configure necessary DNS records. Now when you enter ```mydomain.net``` content from ```example.com/mydomain``` will be loaded and when you enter ```yourdomain.org```, content from ```example.com/yourdomain``` will appear.
+
+To configure this type of domain alias navigate to your [Hosting Control Panel](https://my.nuclear.hosting), ```Sites``` and ```Aliasdomain for website```, click on the ```Add new Aliasdomain```.
+
+Complete the form as described bellow:
+
+ - ```Domain``` enter your alias domain name
+ - ```Parent website``` is a target (website to show when you enter alias domain name) for your alias
+ - ```Redirect Type``` keep unchanged (```No redirect```) or choose ```L```
+ - ```Redirect path``` enter folder name where website for this alias domain will be uploaded
+ - ```Auto-Subdomain``` change value when you want to use wildcard-domain within your alias (*.youralias.tld) or www subdomain (www.youralias.tld) or just simple (none value) original alias domain name (name you entered into ```Domain``` field)
+
+ Now just click on the ```Save``` button.
+
+!!! note
+	Do not forget to configure DNS zone of your alias domain and point to NH servers. The procedure is the same as for poiting domain for a regular hosting, described [here](/domains/#how-to-point-my-domain-to-nuclearhosting).
 
 ## Websites & Web Hosting
 
