@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Nuclear.Hosting www.nuclear.hosting">
+  <link rel="canonical" href="https://nuclear.hosting/help/https/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>HTTPS & Secured Web Access - Nuclear.Hosting Knowledge Base</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "HTTPS & Secured Web Access";
+    var mkdocs_page_input_path = "https.md";
+    var mkdocs_page_url = "/help/https/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-92972843-3', 'nuclear.hosting/help/');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Nuclear.Hosting Knowledge Base</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../start/">How to start using Web Hosting</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../websites/">Websites</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">HTTPS & Secured Web Access</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#conditions-and-restrictions-of-lets-encrypt-ssl-certificates">Conditions and restrictions of Let's Encrypt SSL Certificates</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-activate-ssl-lets-encrypt-certificate">How to activate SSL Let's Encrypt certificate:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-exclude-specific-alias-domain-or-sub-domain-from-lets-encrypt-ssl-certificate">How to exclude specific Alias Domain or Sub-Domain from Let's Encrypt SSL certificate:</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../mysql_databases/">MySQL Databases</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../emails/">E-Mails</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../domains/">Domains</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../dns/">DNS</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../oneclick/">1-Click Installer</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../wordpress/">Wordpress</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../billing/">Payments & Billing</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../files/">Files / Data manipulation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../ftp/">FTP/SFTP</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../git/">GIT</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../shell/">SSH / Chroot</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../video/">Video Tutorials</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../php/">PHP Scripting</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../fup/">Fair Usage Policy</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../backups/">Backups</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../security/">Security</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Nuclear.Hosting Knowledge Base</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>HTTPS & Secured Web Access</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="https-secured-encrypted-access-to-website">HTTPS &amp; Secured (Encrypted) Access to Website</h1>
+<h2 id="conditions-and-restrictions-of-lets-encrypt-ssl-certificates">Conditions and restrictions of Let's Encrypt SSL Certificates</h2>
+<p><a href="https://letsencrypt.org/">Let's Encrypt</a> certification authority provides basic trusted SSL certificates for free. Their use on our hosting has several technical conditions and limitations:</p>
+<ul>
+<li>The appropriate domain <strong>must have our nameservers set</strong> (in the appropriate domain registry, not only DNS records of type NS) and this state must be overwritten in the Internet (ie after fresh settings of the nameservers have to wait for the change to take effect - typically at least one day) or the domain <strong>must have A &amp; AAAA DNS records configured and pointed to our webservers</strong>, as directed by the <a href="https://my.nuclear.hosting">Hosting Control Panel</a>. This is because of the automatic domain verification when the certificate is issued, both new and renewal. The same applies to all aliases that are automatically included in the certificate.</li>
+<li>A <strong>maximum of 50 certificates</strong> can be issued per domain and its subdomains; the same overall limit applies to the number of certificates issued per week (issuing a new certificate, regenerating and extending an existing certificate).</li>
+<li>A <strong>maximum of 5 certificates per week</strong> can be issued for a particular domain or subdomain (including regeneration or renewal).</li>
+<li>A single certificate can contain a <strong>maximum of 100 domain names</strong> (SAN for aliases).</li>
+<li>Wildcard Let's Encrypt certificates are not supported yet.</li>
+</ul>
+<p>Issuing Let's Encrypt certificates does not always work reliably (it is a non-guaranteed third-party service). Certificate issuance is processed once per minute. If the certificate cannot be issued, Let's Encrypt option in the <a href="https://my.nuclear.hosting">Hosting Control Panel</a> is automatically disabled.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Let's Encrypt certificate will be set up within 15 minutes.</p>
+</div>
+<p>Let's Encrypt certificates are automatically renewed 30 days before their expiration. If the extension is unsuccessful for any reason, we do not perform any automatic attempts again. However, there is enough time for manual extension.</p>
+<h3 id="how-to-activate-ssl-lets-encrypt-certificate">How to activate SSL Let's Encrypt certificate:</h3>
+<p>To issue a new SSL Let's Encrypt certificate go to your <a href="https://my.nuclear.hosting">Hosting Control Panel</a> account, navigate to "Sites" and in the left-hand menu click on the "Websites". From the list of your domains select that one, where you want to issue a new Let's Encrypt certificate.</p>
+<p>Next step is just mark / check the <code>Let's Encrypt SSL</code> option and click on the <code>Save</code> button.</p>
+<p><img alt="SSL Let's Encrypt Activation" src="../img/ssl_lets_encrypt_activation.png" /></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Take special care to meet all SSL Let's Encrypt requirements (see above).</p>
+</div>
+<h3 id="how-to-exclude-specific-alias-domain-or-sub-domain-from-lets-encrypt-ssl-certificate">How to exclude specific Alias Domain or Sub-Domain from Let's Encrypt SSL certificate:</h3>
+<p>If you have configured multiple alias sub-domains or alias domains and you want exclude them from the SSL Let's Encrypt Certificate from any reason, you can do that in the <a href="https://my.nuclear.hosting">Hosting Control Panel</a>.</p>
+<p>Just navigate to editation page of specific alias domain or alias sub-domain and check the <code>Don't add to Let's Encrypt certificate</code> option and click on the <code>Save</code> button.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Exclude alias domain or alias sub-domain is preferred before the actual SSL Let's Encrypt activation.</p>
+</div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../mysql_databases/" class="btn btn-neutral float-right" title="MySQL Databases">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../websites/" class="btn btn-neutral" title="Websites"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../websites/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../mysql_databases/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

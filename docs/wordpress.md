@@ -163,6 +163,9 @@ define ('DISABLE_WP_CRON', true);
 
 or use WP-CLI as described above.
 
+!!! note
+	When you install Wordpress by using our 1-Click Wordpress installation, wp-cron is disabled by default. Then, you have to configure cron execution by hand as described below.
+
 Now, you have to setup system cron to regularly call wp-cron.php script on your website. Log-in to your [Hosting Control Panel](https://my.nuclear.hosting), go to ```Sites``` and in the left-hand menu click on ```Cron Jobs``` and then ```Add new Cron job```.
 
 Fill the form like picture shows. In the ```Parent Website``` field choose your domain where you want to configure cron. Into ```Minutes``` field put a random minute value between range 0 - 59. In the ```Command to run``` field replace ```example.com``` by your domain name. Finish setup by clicking on the ```Save``` button.

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Nuclear.Hosting www.nuclear.hosting">
+  <link rel="canonical" href="https://nuclear.hosting/help/websites/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Websites - Nuclear.Hosting Knowledge Base</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Websites";
+    var mkdocs_page_input_path = "websites.md";
+    var mkdocs_page_url = "/help/websites/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-92972843-3', 'nuclear.hosting/help/');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Nuclear.Hosting Knowledge Base</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../start/">How to start using Web Hosting</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Websites</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-subdomain-vhost">1. Subdomain Vhost</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-create">How to create</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-subdomain-alias">2. Subdomain Alias</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description_1">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-create_1">How to create</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-standalone-subdomain">3. Standalone subdomain</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description_2">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-create_2">How to create</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#subdomains-comparsion">Subdomains comparsion</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#aliases">Aliases</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#what-are-domain-aliases">What are domain aliases</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-configure-new-domain-alias">How to configure new domain alias</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#the-same-web-presentations-on-different-domains">The same web presentations on different domains</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#different-web-presentations-on-different-domains-on-one-hosting">Different web presentations on different domains on one hosting</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#websites-web-hosting">Websites &amp; Web Hosting</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#why-we-do-not-support-caching-servers-memcached-redis">Why we do not support caching servers (memcached, redis)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#waf-web-application-firewall">WAF - Web Application Firewall</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#what-is-waf">What is WAF</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#known-issues-of-incompatibilities-of-waf">Known issues of incompatibilities of WAF</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ttfb-time-to-first-byte">TTFB - Time To First Byte</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-measure-ttfb">How to measure TTFB</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-to-improve-your-ttfb">How to improve your TTFB</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../https/">HTTPS & Secured Web Access</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../mysql_databases/">MySQL Databases</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../emails/">E-Mails</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../domains/">Domains</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../dns/">DNS</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../oneclick/">1-Click Installer</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../wordpress/">Wordpress</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../billing/">Payments & Billing</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../files/">Files / Data manipulation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../ftp/">FTP/SFTP</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../git/">GIT</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../shell/">SSH / Chroot</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../video/">Video Tutorials</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../php/">PHP Scripting</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../fup/">Fair Usage Policy</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../backups/">Backups</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../security/">Security</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Nuclear.Hosting Knowledge Base</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Websites</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="domains-and-subdomains">Domains and Subdomains</h1>
+<p>Webhosting services are provided to a specific 2nd level domain (example.com). A third level (or subdomain) "www" domain (www.example.com) can be automatically created for this domain (by your choice in <a href="https://my.nuclear.hosting">Hosting Control Panel</a> during creating a new webhosting), as an alias (example.com and www.example.com are the same web presentation).</p>
+<p>You can create an unlimited number of other subdomains on your domain (my.example.com). Nuclear.Hosting provide <strong>3 types of subdomains</strong> which are sligthly different in usage.</p>
+<h2 id="1-subdomain-vhost">1. Subdomain Vhost</h2>
+<h3 id="description">Description</h3>
+<p>A subdomain is created like a standalone webhosting but its directory is located under the main domain hosting directory structure. The primary domain will have access to this subdomain directory (eg. with PHP script).</p>
+<p><strong>Subdomain Vhost features:</strong></p>
+<ul>
+<li>custom folder name for subdomain</li>
+<li>turn on / off custom Error pages</li>
+<li>enable / disable "www" subdomain alias (www.sub.example.com)</li>
+<li>custom PHP version with custom PHP settings</li>
+<li>custom password protected AWStats statistics</li>
+<li>custom redirects</li>
+<li>Available for both VIP and Basic memberships</li>
+</ul>
+<p><strong>Subdomain Vhost Limitations:</strong></p>
+<ul>
+<li>primary domain have access to subdomains data on the server (eg. within PHP script)</li>
+<li>is linked with primary domain</li>
+</ul>
+<h3 id="how-to-create">How to create</h3>
+<p>In the <a href="https://my.nuclear.hosting">Hosting Control Panel</a> navigate to <code>Sites</code> section and in the left-hand menu click on the <code>Subdomain (Vhost)</code>. To create a new subdomain click on the green <code>Add new subdomain</code>.</p>
+<h2 id="2-subdomain-alias">2. Subdomain Alias</h2>
+<h3 id="description_1">Description</h3>
+<p>It is like a regular 2nd level domain alias. This subdomain is not physicaly created, it is just an alias which can be redirected (HTTP 301 code) either to primary domain or another domain / URL. Also can be pointed to specific directory on your primary domain FTP account.</p>
+<p><strong>Subdomain Alias features:</strong></p>
+<ul>
+<li>it is like an alias / virtual alias</li>
+<li>can be redirected to another domain (HTTP 301)</li>
+<li>can be redirected / routed to specific directory on the primary domain</li>
+<li>different redirection types (by mod_rewrite) like: no flag, R, L, R+L, R=301+L</li>
+<li>Let's Encrypt SSL Support (optinaly can be turned off for specific subdomain)</li>
+<li>Available for both VIP and Basic memberships</li>
+</ul>
+<p><strong>Subdomain Alias limitations:</strong></p>
+<ul>
+<li>is linked with primary domain</li>
+<li>primary domain have access to subdomains data on the server (eg. within PHP script)</li>
+<li>no individual PHP settings or PHP versions (the same PHP version and configuration is applied like on primary domain)</li>
+</ul>
+<h3 id="how-to-create_1">How to create</h3>
+<p>In the <a href="https://my.nuclear.hosting">Hosting Control Panel</a> navigate to <code>Sites</code> section and in the left-hand menu click on the <code>Subdomain for website</code>. To create a new subdomain click on the green <code>Add new Subdomain</code>.</p>
+<h2 id="3-standalone-subdomain">3. Standalone subdomain</h2>
+<h3 id="description_2">Description</h3>
+<p>Standalone subdomain is like a regular webhosting for 2nd level domain. It is independent on any other domain. It is a full-featured webhosting. <strong>Standalone subdomains are available only for VIP membership users.</strong></p>
+<p><strong>Standalone subdomain features:</strong></p>
+<ul>
+<li>standalone and full-features webhosting with all features</li>
+<li>indenpedent of any other domain</li>
+<li>Let's Encrypt SSL support</li>
+<li>custom PHP version &amp; configuration</li>
+<li>custom / dedicated FTP enviroment (no shared with any domain)</li>
+<li>and all regular webhosting benefits and features</li>
+</ul>
+<p><strong>Standalone subdomain limitations:</strong></p>
+<ul>
+<li>no shared files / data / folders with primary or any other domain</li>
+<li>you need a free hosting slot availbe to create a standalone subdomain (within max. domains limits of your account)</li>
+</ul>
+<h3 id="how-to-create_2">How to create</h3>
+<p>The procedure is the same like when you creating a webhosting for a new 2nd level domain. In the <a href="https://my.nuclear.hosting">Hosting Control Panel</a> navigate to <code>Sites</code> section and in the left-hand menu click on the <code>Website</code>. To create a new subdomain click on the green <code>Add new website</code>.</p>
+<h2 id="subdomains-comparsion">Subdomains comparsion</h2>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th>Subdomain Vhost</th>
+<th align="center">Subdomain Alias</th>
+<th align="center">Subdomain Standalone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">SSL Let's Encrypt</td>
+<td>✓</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+</tr>
+<tr>
+<td align="left">SSL Support</td>
+<td>✓</td>
+<td align="center">✕</td>
+<td align="center">✓</td>
+</tr>
+<tr>
+<td align="left">Custom PHP version</td>
+<td>✓</td>
+<td align="center">✕</td>
+<td align="center">✓</td>
+</tr>
+<tr>
+<td align="left">Custom PHP Configuration</td>
+<td>✓</td>
+<td align="center">✕</td>
+<td align="center">✓</td>
+</tr>
+<tr>
+<td align="left">Data accesible from primary domain</td>
+<td>✓</td>
+<td align="center">✓</td>
+<td align="center">✕</td>
+</tr>
+<tr>
+<td align="left">Depends on primary domain</td>
+<td>✓</td>
+<td align="center">✓</td>
+<td align="center">✕</td>
+</tr>
+<tr>
+<td align="left">Custom redirects</td>
+<td>✓</td>
+<td align="center">✓</td>
+<td align="center">✓</td>
+</tr>
+<tr>
+<td align="left">Full-featured webhosting</td>
+<td>✕</td>
+<td align="center">✕</td>
+<td align="center">✓</td>
+</tr>
+<tr>
+<td align="left">Requires available hosting slot</td>
+<td>✕</td>
+<td align="center">✕</td>
+<td align="center">✓</td>
+</tr>
+</tbody>
+</table>
+<h2 id="aliases">Aliases</h2>
+<h3 id="what-are-domain-aliases">What are domain aliases</h3>
+<p>An alias is a web server setting that assigns multiple domain names to a single virtual host in server configuration. It allows to display one web site under several domain names.</p>
+<p>Alias can be configured in your <a href="https://my.nuclear.hosting">Hosting Control Panel</a>, under <code>Sites</code> section and then in the left-hand menu click on the <code>Aliasdomain for website</code>.</p>
+<h3 id="how-to-configure-new-domain-alias">How to configure new domain alias</h3>
+<p>There is several way how to configure domain aliases with several different options regarding usage and behaviour you are expecting.</p>
+<p><img alt="Alias settings" src="../img/domain_alias.png" /></p>
+<h4 id="the-same-web-presentations-on-different-domains">The same web presentations on different domains</h4>
+<p>You will use this option if you own different domains and you want everyone to have the same website.</p>
+<p>Another use-case is when you have a domain pointed to another web hosting, you plan to transfer this domain to Nuclear.Hosting but with a newer website or newer content - you can dev a new version on hosting created on NH, on the original domain name without changing DNS record and just use an alias domain (or alias subdomain) to build a new version of the website and after that, you simply change DNS record of that domain.</p>
+<p><strong>Example:</strong> You have two domain names: <code>example1.com</code> and <code>example2.com</code>. A domain <code>example1.com</code> has created a web hosting with website uploaded and is considered as <em>main</em> domain. The same content you want to see on the <code>example2.com</code> without creating an another standalone hosting and duplicating all website files to there, which is unnecessary. To achieve desired behaviour you need to configure <code>example2.com</code> as alias for <code>example1.com</code> and change a coresponding DNS record for <code>example2.com</code> (point domain to our servers).</p>
+<p>To configure such domain alias, navigate to your <a href="https://my.nuclear.hosting">Hosting Control Panel</a>, <code>Sites</code> and <code>Aliasdomain for website</code>, click on the <code>Add new Aliasdomain</code>.</p>
+<p>Complete the form as described bellow:</p>
+<ul>
+<li><code>Domain</code> enter your alias domain name</li>
+<li><code>Parent website</code> is a target (website to show when you enter alias domain name) for your alias</li>
+<li><code>Redirect Type</code> keep unchanged (<code>No redirect</code>)</li>
+<li><code>Redirect path</code> keep empty</li>
+<li><code>Auto-Subdomain</code> change value when you want to use wildcard-domain within your alias (*.youralias.tld) or www subdomain (www.youralias.tld) or just simple (none value) original alias domain name (name you entered into <code>Domain</code> field)</li>
+</ul>
+<p>Now just click on the <code>Save</code> button.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not forget to configure DNS zone of your alias domain and point to NH servers. The procedure is the same as for poiting domain for a regular hosting, described <a href="/domains/#how-to-point-my-domain-to-nuclearhosting">here</a>.</p>
+</div>
+<h4 id="different-web-presentations-on-different-domains-on-one-hosting">Different web presentations on different domains on one hosting</h4>
+<p>FIXME: Toto nejde ako na CH, musi sa to nasmerovat do zlozky v "Cesta presmerovani"</p>
+<p>Thanks to aliases, you can run several different web presentations on different domains on one hosting. This solution is suitable in a situation where creating or purchasing standalone hosting for a given domain name would be unnecessary.</p>
+<p>In this case you can point your alias domain to existing subdomain on already hosted domain.</p>
+<p><strong>Example:</strong> You have hosting created for a domain <code>example.com</code> and another domains <code>mydomain.net</code> and <code>yourdomain.org</code> where you want to create a simple websites without creating a new standalone hosting accounts for them. To do this, you need to create an two folders on <code>example.com</code> FTP space, let say <code>mydomain</code> and <code>yourdomain</code> in the main <code>/web</code> folder. Upload your websites to those folders. Configure domain <code>mydomain.net</code> as an alias for <code>example.com</code> and configure <code>Redirect Path</code> to folder <code>/mydomain/</code> and repeat the same for <code>yourdomain.org</code> but enter <code>/yourdomain/</code> to <code>Redirect Path</code>. Configure necessary DNS records. Now when you enter <code>mydomain.net</code> content from <code>example.com/mydomain</code> will be loaded and when you enter <code>yourdomain.org</code>, content from <code>example.com/yourdomain</code> will appear.</p>
+<p>To configure this type of domain alias navigate to your <a href="https://my.nuclear.hosting">Hosting Control Panel</a>, <code>Sites</code> and <code>Aliasdomain for website</code>, click on the <code>Add new Aliasdomain</code>.</p>
+<p>Complete the form as described bellow:</p>
+<ul>
+<li><code>Domain</code> enter your alias domain name</li>
+<li><code>Parent website</code> is a target (website to show when you enter alias domain name) for your alias</li>
+<li><code>Redirect Type</code> keep unchanged (<code>No redirect</code>) or choose <code>L</code></li>
+<li><code>Redirect path</code> enter folder name where website for this alias domain will be uploaded</li>
+<li><code>Auto-Subdomain</code> change value when you want to use wildcard-domain within your alias (*.youralias.tld) or www subdomain (www.youralias.tld) or just simple (none value) original alias domain name (name you entered into <code>Domain</code> field)</li>
+</ul>
+<p>Now just click on the <code>Save</code> button.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not forget to configure DNS zone of your alias domain and point to NH servers. The procedure is the same as for poiting domain for a regular hosting, described <a href="/domains/#how-to-point-my-domain-to-nuclearhosting">here</a>.</p>
+</div>
+<h2 id="websites-web-hosting">Websites &amp; Web Hosting</h2>
+<h3 id="why-we-do-not-support-caching-servers-memcached-redis">Why we do not support caching servers (memcached, redis)</h3>
+<p>On our webservers we do not support caching servers like Memcached or Redis.</p>
+<p>There is a big security problem with shared hosting and caching servers. Caching servers uses memory that is shared by all customers on the server. Then it is not such a problem to use the content of this shared memory to penetrate a foreign site.</p>
+<p>Unfortunately, many shared hosting companies do not address this risk. But for us, safety comes first.</p>
+<p>On the other side, the absence of caching servers support we have fast SSD/NVMe disks on all our servers. We are also able to connect for you a special RAM-Disk which is a dedicated piece of RAM memory connected as a regular directory (dedicated for you) where you can place your cache files. The advantage of this solution is that it's very similar to memcached or redis server where cached data are placed into RAM.</p>
+<h2 id="waf-web-application-firewall">WAF - Web Application Firewall</h2>
+<h3 id="what-is-waf">What is WAF</h3>
+<p>A <code>web application firewall (WAF)</code> is an application firewall for HTTP applications. It applies a set of rules to an HTTP conversation. By inspecting HTTP traffic, it can prevent attacks stemming from web application security flaws, such as SQL injection, cross-site scripting (XSS), file inclusion, and security misconfigurations.</p>
+<p>On our servers we are using <a href="https://www.modsecurity.org/">ModSecurity</a> as WAF.</p>
+<h3 id="known-issues-of-incompatibilities-of-waf">Known issues of incompatibilities of WAF</h3>
+<p>Some application causing False Positive results from the WAF and those kind of requests are blocked. For those applications is not possible to fix the rules which are causing False positive cases. The only solution is to turn off those rules particulary or turn off WAF for whole application (<strong>not recommended!</strong>). To investigate those cases contact our Support team and with co-operation we decide what is the best solution of your particular situation.</p>
+<p>Bellow you can find well-known False positive WAF cases which we can solve easily by disabling particular WAF rules for your website. To do that, please contact our Support team.</p>
+<p><strong>Well-known False positive WAF issues:</strong></p>
+<ul>
+<li>Divi Builder for Wordpress</li>
+</ul>
+<h2 id="ttfb-time-to-first-byte">TTFB - Time To First Byte</h2>
+<p>Time to first byte (TTFB) is a measurement used as an indication of the responsiveness of a webserver or other network resource.  TTFB measures the duration from the user or client making an HTTP request to the first byte of the page being received by the client's browser.</p>
+<p>Time to first byte is an element of site speed, but a low TTFB on its own is not enough to make a site fast. For example, if a site has a low TTFB but lots of images, ads, javascript files, connecting to external resources (3rd party APIs) then it will still take a long time for the site to load fully.</p>
+<p>There are three main components to TTFB:</p>
+<ul>
+<li><strong>Request:</strong> When a web browser goes to a website, it sends an http request which gets routed and travels to eventually reach the server that hosts the site.</li>
+<li><strong>Server processing:</strong> The server receives the request, pass it to <strong>your web application</strong>, your website processes it and sends back response.</li>
+<li><strong>Response:</strong> The response from the server gets routed and travels back to the web browser. TTFB is the time it takes for the first piece of the response to reach the web browser.</li>
+</ul>
+<p>The location of your visitors is a big factor because the request has to travel from the visitor’s computer to the server, and then the response has to travel all the way back.</p>
+<p>For a website hosted in the US, a visitor from a US city might get a TTFB under 200 milliseconds, while a visitor from Europe could get a TTFB of 1 second or more.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Do you know that with our VIP Membership you can host your websites in the USA and Europe location? Its only up to you where you place your websites.</p>
+</div>
+<p>The speed of the visitor’s internet is also important. A slow connection with a bad signal could have a much higher TTFB.</p>
+<p>One of the most important elements in the TTFB is your website / your web application. The actual response to clients request is generated by your application. Webserver pass clients request to your application (either HTML or PHP). Your application process the request (for example by executing PHP code) and return some output which webserver send back to the client's browser. If your application is slow, executing of your PHP code is slower, not efficient enough, consumes too much server resources, handling a lot of data (from MySQL database or 3rd party services), the request processing will be longer and TTFB will rise essentially.</p>
+<h3 id="how-to-measure-ttfb">How to measure TTFB</h3>
+<p>There are several free tools you can use to measure your website’s TTFB.</p>
+<p><strong>1. KeyCDN Tool</strong></p>
+<p>This <a href="https://tools.keycdn.com/performance">free tool from KeyCDN</a> tests your website’s TTFB from 14 different locations around the world.</p>
+<p>The difference in TTFB measured is mostly due to the distance from the testing locations to the web server.</p>
+<p><strong>2. WebPageTest</strong></p>
+<p><a href="http://webpagetest.org/">WebPageTest</a> has a very detailed speed test tool that gives you a lot of data, including a detailed waterfall chart that shows all the different files that load.</p>
+<p>It also gives you a result for TTFB, both an exact number and a letter grade.</p>
+<p><strong>3. PageSpeed Insights</strong></p>
+<p>TTFB is also a component of <a href="https://developers.google.com/speed/pagespeed/insights/">Google’s PageSpeed Insights</a> test tool. If it is high, the tool gives you a warning and lowers your score.</p>
+<p><strong>4. Google Chrome DevTools / Firefox DevTools</strong></p>
+<p>You can measure TTFB in Google Chrome / Firefox by launching DevTools. Remember, if you are testing from your computer that TTFB is affected by network latency and your internet connection.</p>
+<div class="admonition notice">
+<p class="admonition-title">Notice</p>
+<p>Those 3rd party tools are not perfect and results from them are not 100% reliable and guaranteed. Use them with wisdom, as clues rather than mandatory. The results may differs rapidly from test by test and tool by tool.</p>
+</div>
+<h3 id="how-to-improve-your-ttfb">How to improve your TTFB</h3>
+<p>Regarding to our previous explanation of TTFB, there is a several steps you can do to improve your TTFB.</p>
+<p><strong>1. Optimize your web application</strong></p>
+<p>This is a first and mandatory step to significantly improve your TTFB. What does it mean in particular?</p>
+<ul>
+<li>analyse your SQL queries, slow queries, simplifie them</li>
+<li>analyse content in SQL tables, check if you are using indexes, remove old or unnecessary content from SQL tables</li>
+<li>analyse if your website is connecting to any 3rd party websites or APIs, check how long this connection takes, consider not to call this resource online rather than in CRON or if you have to call them, configure lowest possible timeout for this connection</li>
+<li>prevent loading a big images, a lot of CSS or JS files, move them to end of the page loading if possible</li>
+<li>use PHP profiller tool to investigate bottlenecks in your app or NewRelic tool</li>
+<li>consider to use caching (caching plugin if you are using CMS) to cache and serve static content and/or SQL queries</li>
+</ul>
+<p><strong>2. Keep your server as close to your users as possible</strong></p>
+<p>The distance from the web server is one of the most important determinants of TTFB.</p>
+<p>If the majority of your users come from the US, then your site should be hosted in the US. If it’s a UK-specific website, then it should be hosted in the UK or Europe in general.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Do you know that with our VIP Membership you can host your websites in the USA and Europe location? Its only up to you where you place your websites.</p>
+</div>
+<p><strong>3. Use a content delivery network (CDN)</strong></p>
+<p>CDN stands for Content Delivery Network.</p>
+<p>By using a CDN for your website, you can cache static files like images, css files and javascript files on servers that are close to your visitors. A CDN can speed up your site by serving these static files to your visitors much faster. It does not lower the TTFB of your initial html page file, but it does significantly lower the TTFB of the static files.</p>
+<p>Popular CDN network are CloudFlare or OVH CDN.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you are interested in about CDN usage, contact us! We can offer you usage of our CDN network with nodes (19 nodes) all over the world.</p>
+</div>
+<p><strong>4. Switch to a faster web host</strong></p>
+<p>If your web server is poorly configured or not powerful enough to deliver a speedy response to the visitor, then your TTFB will be high.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This option should be considered either as first or as the last option in your journey to lower TTFB. It really depends on many factors. If your app is not working fast enough even on the fastest server/web host you will have poor TTFB.</p>
+</div>
+<p>When it comes to web hosting, you really do get what you pay for. A cheap web hosting provider may be holding your site back and preventing it from reaching its full potential</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Do you know that we in Nuclear.Hosting are using the fastest NVMe SSD drive, we strictly limit the number of websites on every webserver and before every webserver is placed a caching proxy server? This prevents to servers overload (and increasing TTFB) when hundreds or even thousands websites are placed on the one server (to save web host costs which is very common), speed-up and lower disk I/O and serve content much faster.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Interesting about to move your web sites to us? Contact us, we can talk about your issues and needs.</p>
+</div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../https/" class="btn btn-neutral float-right" title="HTTPS & Secured Web Access">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../start/" class="btn btn-neutral" title="How to start using Web Hosting"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../start/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../https/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
