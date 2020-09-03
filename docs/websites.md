@@ -174,16 +174,6 @@ A ```web application firewall (WAF)``` is an application firewall for HTTP appli
 
 On our servers we are using [ModSecurity](https://www.modsecurity.org/) as WAF.
 
-### Known issues of incompatibilities of WAF
-
-Some application causing False Positive results from the WAF and those kind of requests are blocked. For those applications is not possible to fix the rules which are causing False positive cases. The only solution is to turn off those rules particulary or turn off WAF for whole application (**not recommended!**). To investigate those cases contact our Support team and with co-operation we decide what is the best solution of your particular situation.
-
-Bellow you can find well-known False positive WAF cases which we can solve easily by disabling particular WAF rules for your website. To do that, please contact our Support team.
-
-**Well-known False positive WAF issues:**
-
- - Divi Builder for Wordpress
-
 ## TTFB - Time To First Byte
 
 Time to first byte (TTFB) is a measurement used as an indication of the responsiveness of a webserver or other network resource.  TTFB measures the duration from the user or client making an HTTP request to the first byte of the page being received by the client's browser.
