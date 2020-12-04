@@ -21,7 +21,7 @@ mc	mcview	mysql	rsync	sort	tac		tr		vi		wc		zip		unzip	gawk	basename
 id	diff	patch	host	du		bzip2	bunzip2	xz		unxz	bzcat	xzcat	realpath
 ```
 
-Shell commands can be executed as: ```bash yourscript.sh```.
+EmShell commands can be executed only as: ```bash yourscript.sh```.
 
 ### Special Shell commands
 
