@@ -17,13 +17,15 @@ nav:
     - E-Mails: emails.md
     - Domains: domains.md
     - DNS: dns.md
+    - Billing: billing.md
     - 1-Click Installer: oneclick.md
     - Wordpress: wordpress.md
     - Payments & Billing: billing.md
     - Files / Data manipulation: files.md
     - FTP/SFTP: ftp.md
-    - GIT: git.md
-    - SSH / Chroot: shell.md
+    - CRON: cron.md
+    - GIT / Gitlab: git.md
+    - SSH / Shell: shell.md
     - Video Tutorials: video.md
     - PHP Scripting: php.md
     - Fair Usage Policy: fup.md
