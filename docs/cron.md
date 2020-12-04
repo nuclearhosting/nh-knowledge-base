@@ -65,7 +65,7 @@ In your [Hosting Control Panel account](https://my.nuclear.hosting), navigate to
 
 Steps are basically the same as when creating Webcron job (described in the section above). The only difference are:
 
- - **Command to run:** enter command you wish to execute. You can execute either PHP script or shell script. Please note that shell script has to have execution rights (chmod with +x option) and has to contains [allowed commands](shell.md). There is also necessary to enter command in the right format. Please read bellow the command syntax.
+ - **Command to run:** enter command you wish to execute. You can execute either PHP script or shell script. Please note that shell script has to contains [allowed commands](shell.md) only. There is also necessary to enter command in the right format. Please read bellow the command syntax.
  - **Log output:** you can enable logging of the script output. To the log is saved output which is returned by the script. The cron log is located in ```./private/cron.log``` or ```./private/cron_error.log``` if error during execution has occured (STDERR is logged). Cron logfiles are rotated regularly.
 
 #### Command syntax
@@ -95,6 +95,9 @@ Example 2: You want to execute script ```mycron.php``` located in ```/web``` dir
 Example 3: You want to execute script ```deploy.sh``` located in ```/private``` directory which contains deploying steps of your application. The ```Command``` will be as follow:
 
 ```cd /private && bash deploy.sh```
+
+!!! important
+	Do not run bash scripts like ```./yourscript.sh``` even with correct script permissions (+x) - it will not work. Instead use ```bash yourscript.sh```.
 
 !!! note
 	Test your script via SSH before you configure it as a cron job. Set correct path's in your script, regarding to cron execution and directory you are testing from via SSH.
