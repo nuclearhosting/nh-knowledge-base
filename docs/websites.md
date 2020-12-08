@@ -2,11 +2,13 @@
 
 Webhosting services are provided to a specific 2nd level domain (example.com). A third level (or subdomain) "www" domain (www.example.com) can be automatically created for this domain (by your choice in [Hosting Control Panel](https://my.nuclear.hosting) during creating a new webhosting), as an alias (example.com and www.example.com are the same web presentation).
 
+## Subdomains
+
 You can create an unlimited number of other subdomains on your domain (my.example.com). Nuclear.Hosting provide **3 types of subdomains** which are sligthly different in usage.
 
-## 1. Subdomain Vhost
+### 1. Subdomain Vhost
 
-### Description
+#### Description
 
 A subdomain is created like a standalone webhosting but its directory is located under the main domain hosting directory structure. The primary domain will have access to this subdomain directory (eg. with PHP script).
 
@@ -25,13 +27,13 @@ A subdomain is created like a standalone webhosting but its directory is located
  - primary domain have access to subdomains data on the server (eg. within PHP script)
  - is linked with primary domain
 
-### How to create
+#### How to create
 
 In the [Hosting Control Panel](https://my.nuclear.hosting) navigate to ```Sites``` section and in the left-hand menu click on the ```Subdomain (Vhost)```. To create a new subdomain click on the green ```Add new subdomain```.
 
-## 2. Subdomain Alias
+### 2. Subdomain Alias
 
-### Description
+#### Description
 
 It is like a regular 2nd level domain alias. This subdomain is not physicaly created, it is just an alias which can be redirected (HTTP 301 code) either to primary domain or another domain / URL. Also can be pointed to specific directory on your primary domain FTP account.
 
@@ -50,13 +52,13 @@ It is like a regular 2nd level domain alias. This subdomain is not physicaly cre
  - primary domain have access to subdomains data on the server (eg. within PHP script)
  - no individual PHP settings or PHP versions (the same PHP version and configuration is applied like on primary domain)
 
-### How to create
+#### How to create
 
 In the [Hosting Control Panel](https://my.nuclear.hosting) navigate to ```Sites``` section and in the left-hand menu click on the ```Subdomain for website```. To create a new subdomain click on the green ```Add new Subdomain```.
 
-## 3. Standalone subdomain
+### 3. Standalone subdomain
 
-### Description
+#### Description
 
 Standalone subdomain is like a regular webhosting for 2nd level domain. It is independent on any other domain. It is a full-featured webhosting. **Standalone subdomains are available only for VIP membership users.**
 
@@ -74,11 +76,11 @@ Standalone subdomain is like a regular webhosting for 2nd level domain. It is in
  - no shared files / data / folders with primary or any other domain
  - you need a free hosting slot availbe to create a standalone subdomain (within max. domains limits of your account)
 
-### How to create
+#### How to create
 
 The procedure is the same like when you creating a webhosting for a new 2nd level domain. In the [Hosting Control Panel](https://my.nuclear.hosting) navigate to ```Sites``` section and in the left-hand menu click on the ```Website```. To create a new subdomain click on the green ```Add new website```.
 
-## Subdomains comparsion
+### Subdomains comparsion
 
 |     | Subdomain Vhost | Subdomain Alias | Subdomain Standalone  |
 |:---| ------------- |:-------------:|:-----:|
