@@ -36,6 +36,9 @@ Ask your domain name registrar to change DNS Nameservers for your domain (or mad
 
 	**NS2 (secondary):** ns2.nuclear.hosting
 
+	**NS3 (secondary):** ns3.nuclearhosting.eu
+
+
 !!! tip
 	If you have DNSSEC enabled on your domain, delete all set DNS keys together with the nameserver change!
 

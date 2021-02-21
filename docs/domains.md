@@ -84,6 +84,9 @@ About DNS Name servers change, you have to ask your domain name registrar. In th
 
 	**NS2 (secondary):** ns2.nuclear.hosting
 
+	**NS3 (secondary):** ns3.nuclearhosting.eu
+
+
 
 !!! tip
 	If you have DNSSEC enabled on your domain, delete all set DNS keys together with the nameserver change!
