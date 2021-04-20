@@ -4,7 +4,7 @@ PHP (an acronym for PHP: Hypertext Preprocessor) is a scripting language that’
 
 ## Supported PHP versions
 
-| PHP version | Supported | Note | phpinfo* |
+| PHP version | Supported | Note | phpinfo<sup>1</sup> |
 |:---: |: ------------- :| : ------- | : ------- : |
 | PHP5.3 | ✕ | Not developed since 2014 | - |
 | PHP5.4 | ✕ | Not developed since 2015 | - |
@@ -13,9 +13,11 @@ PHP (an acronym for PHP: Hypertext Preprocessor) is a scripting language that’
 | PHP7.0 | ✓ | Deprecated, not developed since 2019, upgrade ASAP to 7.3 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo70.html) |
 | PHP7.1 | ✓ | Deprecated, not developed since 2019, upgrade ASAP to 7.3 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo71.html) |
 | PHP7.2 | ✓ | Deprecated, not developed since 2020, upgrade ASAP to 7.3 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo72.html) |
-| PHP7.3 | ✓ | | [phpinfo](http://denver.nuclearserver.xyz/phpinfo73.html) |
-| PHP7.4 | ✓ | | [phpinfo](http://denver.nuclearserver.xyz/phpinfo74.html) |
+| PHP7.3 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo73.html) |
+| PHP7.4 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo74.html) |
+| PHP8.0 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo80.html) |
 
+<br />
 
 !!! important
 	We highly suggest you to always using newest PHP version for your website. Besides permormance reasons (newer PHP version has much more higher performance and radically can speed-up your website loading time), its security reasons and support from developers. Older PHP versions are hard to carry on on newest operating systems with latest upgrades.
@@ -23,7 +25,7 @@ PHP (an acronym for PHP: Hypertext Preprocessor) is a scripting language that’
 !!! important
 	PHP versions 5.6, 7.0, 7.1 and 7.2 are obsolete and no (or security) updates are released. We do not recommend using them, instead use one of the newer versions.
 
-*Not all values in the example phpinfo must match the production environment. Some values differ for VIP and Basic Membership.
+(1)Not all values in the example phpinfo must match the production environment. Some values differ for VIP and Basic Membership.
 
 All PHP versions are available on all servers at all web hostings. There is no need to ask us to activate or move to another server. All you have to do is switch the version in the [Hosting Control Panel](https://my.nuclear.hosting).
 
