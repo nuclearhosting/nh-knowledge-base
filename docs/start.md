@@ -19,7 +19,11 @@ For your website to work on your domain, it must be uploaded to the webserver an
 
 ### Set up domain to webserver
 
-Before uploading your website to the server, you have to set up your domain to the webserver. In the [Control Panel](https://my.nuclear.hosting), navigate to "Sites" section and then "Websites" in the left-hand menu. Click on the "Add new website" button. You can set several different options here, such as Disk quota, Enable / Disable custom error pages, Enable / Disable SSI (Server Side Include), choose PHP version and so on. Enter your domain name and click on the "Save" button. Alternatively you can use [Hosting Wizard tool](#how-to-create-webhosting-using-hosting-wizard) (see bellow).
+Before uploading your website to the server, you have to set up your domain to the webserver first. In the [Hosting Control Panel](https://my.nuclear.hosting), navigate to ```Sites``` and then ```Websites``` in the left-hand menu. Click on the ```Add new website``` button.
+
+You can configure several different options here, such as **Disk quota**, Enable / Disable custom error pages, Enable / Disable SSI (Server Side Include), **PHP version** and **geo-location of the webserver** where you want to host your website (*VIP Memberships only*). The list of all available geo-locations can be found [here](../websites/#webservers-geo-locations).
+
+Enter your domain name and click on the "Save" button. Alternatively you can use [Hosting Wizard tool](#how-to-create-webhosting-using-hosting-wizard) (see bellow).
 
 ![Set up domain to webserver](img/webdomain_add.png)
 
@@ -94,9 +98,9 @@ For **outgoing emails** you do not necessarily need to use our sending SMTP serv
 
 ## How to create webhosting using Hosting Wizard
 
-Hosting Wizard is tool in Control Panel which allows you to create full webhosting for your domain. In one single step you can create website hosting, set disk quotas, choose PHP version, create DNS zone with all DNS records, e-mail mailboxes, MySQL database, FTP account,set up DKIM and much more.
+Hosting Wizard is tool in Control Panel which allows you to create full webhosting for your domain. In one single step you can create website hosting, set disk quotas, choose PHP version, create DNS zone with all DNS records, e-mail mailboxes, MySQL database, FTP account, set up DKIM, choose webserver geo-location and much more.
 
-To use Hosting Wizard login to your [Control Panel](https://my.nuclear.hosting) account and click on "Create webhosting" button located in top menu.
+To use Hosting Wizard login to your [Control Panel](https://my.nuclear.hosting) account and click on ```Create webhosting``` button located in top menu.
 
 By using a Hosting Wizard you can also install a Wordpress to your domain. Just check the ```Install Wordpress``` field and ```Create DB``` as well.
 

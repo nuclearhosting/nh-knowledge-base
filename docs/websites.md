@@ -168,6 +168,28 @@ Unfortunately, many shared hosting companies do not address this risk. But for u
 
 On the other side, the absence of caching servers support we have fast SSD/NVMe disks on all our servers. We are also able to connect for you a special RAM-Disk which is a dedicated piece of RAM memory connected as a regular directory (dedicated for you) where you can place your cache files. The advantage of this solution is that it's very similar to memcached or redis server where cached data are placed into RAM.
 
+### WebServers Geo-Locations
+
+Nuclear.Hosting allows you to host your website in many different geo-locations. This feature is available for all **VIP Memberships**. Are your customers located primarily in 🇪🇺Europe or in the 🇺🇸USA? Are your traffic comes mostly from the 🇺🇸USA or from 🇪🇺Europe? Speed up your website and decrease the load time of your websites. Place your website in the location closest to your customers and visitors. In the table below you can find all our geo-location where you can create your web hosting. We continualy adding a new geo-locations.
+
+!!! note
+	You can host your website only on one webserver at the same time. You cannot host your website in any location in the US and EU at the same time. However, you can host multiple subdomains within the one domain in different locations. For example: us1.mydomain.tld can be hosted in the USA and eu1.mydomain.tld can be hosted in EU location.
+
+| WebServer      | Geo-Location | Server Hostname     | IPv4 Address | IPv6 Address |
+| :---:       |    :---:    |    :---:      |    :---:      |    :---:      |
+| EU-FR1      | 🇪🇺Europe - France - Gravelines       | denver.nuclearserver.xyz   | 87.98.254.239 | 2001:41d0:303:c978::100 |
+| EU-GB1      | 🇪🇺Europe - United Kingdom - London   | london.nuclearserver.xyz   | 51.75.162.123 | 2001:41d0:801:2000::15b9 |
+| EU-PL1	  | 🇪🇺Europe - Poland - Warsaw		   | warsaw.nuclearserver.xyz	| 51.83.187.175 | 2001:41d0:601:1100::3afb |
+| EU-DE1	  | 🇪🇺Europe - Germany - Frankfurt	   | frankfurt.nuclearserver.xyz| 51.195.45.175 | 2001:41d0:701:1100::41a |
+| USA-US1	  | 🇺🇸USA - Virginia - Warrenton		   | boston.nuclearserver.xyz   | 51.81.80.188 | 2604:2dc0:101:200::95c |
+
+<br />
+
+!!! important
+	Basic Membership websites are currently located in the EU location (France, Gravelines).
+
+Would you like to add some specific Geo-locations? Let us know!
+
 ## WAF - Web Application Firewall
 
 ### What is WAF
