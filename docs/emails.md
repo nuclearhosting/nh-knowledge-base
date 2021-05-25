@@ -102,7 +102,7 @@ All incoming e-mails you can forward to another e-mail address. In this case, th
 
 You can define your own size / quota for every mailbox. You can set mailbox size during [mailbox creating](#how-to-create-a-new-mailbox) or [anytime later](#how-to-change-mailbox-settings).
 
-In addition to the size / quota of the mailbox, there is also limit for the number of messages (files) stored in one mailbox (20,000) and all mailboxes in the given domain (to 100,000).
+In addition to the mailbox size (quota), there is also limit for the number of messages (files) stored in one mailbox. This limit is calculated by mailbox size limit (1 000 files for every 1GB) but maximum number of files is limited to 125 000 files.
 
 If the mailbox or domain exceed allocated quota to the size or number of files, new e-mail messages are not received and the senders receive a non-delivery report due to the recipient's full mailbox.
 
