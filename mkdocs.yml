@@ -20,14 +20,16 @@ nav:
     - Billing: billing.md
     - 1-Click Installer: oneclick.md
     - Wordpress: wordpress.md
+    - PrestaShop: prestashop.md
     - Payments & Billing: billing.md
     - Files / Data manipulation: files.md
+    - PHP Scripting: php.md
     - FTP/SFTP: ftp.md
     - CRON: cron.md
     - GIT / Gitlab: git.md
     - SSH / Shell: shell.md
+    - WebSMTP: websmtp.md
     - Video Tutorials: video.md
-    - PHP Scripting: php.md
     - Fair Usage Policy: fup.md
     - Backups: backups.md
     - Security: security.md
