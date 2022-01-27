@@ -190,6 +190,16 @@ Nuclear.Hosting allows you to host your website in many different geo-locations.
 
 Would you like to add some specific Geo-locations? Let us know!
 
+### Authorization header in HTTP request
+
+By default, ```Authorization``` header in HTTP requests provided to webserver and your PHP applications is not present and is filtered by webserver. In situation, when you need to work with ```Authorization``` header in HTTP requests (eg. Restful API with JWT authorization and so on), you need to adjust your ```.htaccess``` file.
+
+Open (or create) your .htaccess file under your website and add the following directive to enable ```Authorization``` header passing to your application:
+
+```
+CGIPassAuth on
+```
+
 ## WAF - Web Application Firewall
 
 ### What is WAF
@@ -248,7 +258,7 @@ You can measure TTFB in Google Chrome / Firefox by launching DevTools. Remember,
 !!! notice
 	Those 3rd party tools are not perfect and results from them are not 100% reliable and guaranteed. Use them with wisdom, as clues rather than mandatory. The results may differs rapidly from test by test and tool by tool.
 
-### How to improve your TTFB
+### How to improve your TTFB
 
 Regarding to our previous explanation of TTFB, there is a several steps you can do to improve your TTFB.
 
