@@ -10,12 +10,13 @@ PHP (an acronym for PHP: Hypertext Preprocessor) is a scripting language that’
 | PHP5.4 | ✕ | Not developed since 2015 | - |
 | PHP5.5 | ✕ | Not developed since 2014 | - |
 | PHP5.6 | ✓ | Deprecated, not developed since 2019, upgrade ASAP to 7.X | [phpinfo](http://denver.nuclearserver.xyz/phpinfo56.html) |
-| PHP7.0 | ✓ | Deprecated, not developed since 2019, upgrade ASAP to 7.3 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo70.html) |
-| PHP7.1 | ✓ | Deprecated, not developed since 2019, upgrade ASAP to 7.3 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo71.html) |
-| PHP7.2 | ✓ | Deprecated, not developed since 2020, upgrade ASAP to 7.3 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo72.html) |
-| PHP7.3 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo73.html) |
+| PHP7.0 | ✓ | Deprecated, not developed since 2019, upgrade ASAP to 7.4 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo70.html) |
+| PHP7.1 | ✓ | Deprecated, not developed since 2019, upgrade ASAP to 7.4 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo71.html) |
+| PHP7.2 | ✓ | Deprecated, not developed since 2020, upgrade ASAP to 7.4 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo72.html) |
+| PHP7.3 | ✓ | Deprecated, not developed since 2021, upgrade ASAP to 7.4 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo73.html) |
 | PHP7.4 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo74.html) |
 | PHP8.0 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo80.html) |
+| PHP8.1 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo81.html) |
 
 <br />
 
