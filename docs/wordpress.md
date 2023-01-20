@@ -1,6 +1,8 @@
 # Wordpress
 
-WordPress is open source software you can use to create a beautiful website, blog, or app. Beautiful designs, powerful features, and the freedom to build anything you want. WordPress is both free and priceless at the same time.
+[WordPress](https://wordpress.org) is open source software you can use to create a beautiful website, blog, or app. Beautiful designs, powerful features, and the freedom to build anything you want. WordPress is both free and priceless at the same time.
+
+Most of our shared [web hosting](https://nuclear.hosting) customers are using Wordpress as content management system for managing website content.
 
 ## Installing Wordpress by 1-Click Installer
 
