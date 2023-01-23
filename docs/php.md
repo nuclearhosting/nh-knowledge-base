@@ -17,6 +17,7 @@ PHP (an acronym for PHP: Hypertext Preprocessor) is a scripting language that’
 | PHP7.4 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo74.html) |
 | PHP8.0 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo80.html) |
 | PHP8.1 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo81.html) |
+| PHP8.2 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo82.html) |
 
 <br />
 
