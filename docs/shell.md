@@ -84,7 +84,7 @@ To change default PHP version for ```php``` command use ```php_chooser``` comman
 
 Syntax: ```wp command [global params]```
 
-Command ```wp``` is a WP-CLI utility to manage your Wordpress via CLI. More informatio about WP-CLI you can find in [this article](/wordpress/#wp-cli-how-to-use-wp-cli-to-manage-wordpress-from-cli) or the official WP-CLI utility [website](https://wp-cli.org).
+Command ```wp``` is a WP-CLI utility to manage your Wordpress via CLI. More informatio about WP-CLI you can find in [this article](../wordpress/#wp-cli-how-to-use-wp-cli-to-manage-wordpress-from-cli) or the official WP-CLI utility [website](https://wp-cli.org).
 
 **wkhtmltoimage**
 

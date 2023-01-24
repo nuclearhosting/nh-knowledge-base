@@ -154,7 +154,7 @@ Complete the form as described bellow:
  Now just click on the ```Save``` button.
 
 !!! note
-	Do not forget to configure DNS zone of your alias domain and point to NH servers. The procedure is the same as for poiting domain for a regular hosting, described [here](/domains/#how-to-point-my-domain-to-nuclearhosting).
+	Do not forget to configure DNS zone of your alias domain and point to NH servers. The procedure is the same as for poiting domain for a regular hosting, described [here](../domains/#how-to-point-my-domain-to-nuclearhosting).
 
 ## Websites & Web Hosting
 
