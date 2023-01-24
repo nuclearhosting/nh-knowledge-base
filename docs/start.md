@@ -1,14 +1,23 @@
 # How to start using hosting
 
-We are very glad you chose Nuclear.Hosting. This page will help you with the first steps of using our services. Here's how to get started, set up emails, upload your site to a server, create a database and other useful links to detailed tutorials.
+We are delighted that you have chosen Nuclear.hosting. This page is designed to help you get started with our services. You'll find information on getting started, setting up email, uploading your site to a server, creating a database and other useful links to detailed tutorials.
 
-If you are looking for help with ordering or domain registration, please use the [How To Register Domain](../domains/#how-to-get-your-domain-name) and [How to sign-up and order hosting](../how_to_signup) section.
+If you are looking for help with ordering or domain registration, please read the [How To Register Domain](../domains/#how-to-get-your-domain-name) and [How to sign-up and order hosting](#how_to_signup) section.
 
-Start by logging into the [Control Panel](https://my.nuclear.hosting). Your credentials you can find in the email we sent to you after your sign-up confirmation. You can also reset a forgotten password to the Control Panel.
+Start by logging in to [Control Panel](https://my.nuclear.hosting). You can find your login details in the email we sent you after confirming your registration. You can also reset a forgotten password in the Control Panel. You set up all your hosting services in the Control Panel.
 
-In the Control Panel, you set up all the hosting services.
+You will be able to use the hosting services once your registration has been approved.
 
-You can use the hosting services once your registration has been approved. The approval process usually takes less than 24 hours.
+## How to Sign-Up
+
+To become a member of Nuclear.Hosting all you need to do is complete our simple [registration form](https://nuclear.hosting/create-account). All you need is a valid phone number and a working email address. During the registration process you will need to verify both your email address and phone number by entering the verification codes we will send you.
+
+!!! note
+	If you don't verify your email address and phone number, your registration will not be accepted. Verification is a necessary step to prevent spammers and other harmful registrations.
+
+After you complete the registration process with all required verifications, your registration will either be automatically approved and your account will be created immediately, or our manual review and approval will be required. In this case, the approval process usually takes less than 24 hours.
+
+Before you can start using your new web hosting (depending on your membership), you must first pay for your subscription. The payment notice and invoice will be automatically generated and sent to you with the registration approval. You can pay by bank transfer or PayPal. You can find more information on the [Payments & Billing](../billing) page.
 
 ## How to launch your website
 

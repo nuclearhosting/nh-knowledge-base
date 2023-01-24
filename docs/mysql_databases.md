@@ -97,7 +97,7 @@ Remote access is possible throught SSH tunnel. The connection is routed via SSH 
 
 ### MySQL SSH Tunnel Login Details
 
-Before you can use MySQL SSH Tunnel for remote access, you have to create a new SSH user. If have no SSH users created yet, [follow these steps](../chroot/#how_to_create_ssh_user).
+Before you can use MySQL SSH Tunnel for remote access, you have to create a new SSH user. If have no SSH users created yet, [follow these steps](../ftp/#how-to-create-sftpscp-account).
 
  * Server hostname: same like for FTP / SFTP / SSH connection. You can find your hostname in Hosting Control Panel, on the Dashboard.
  * Port number: same like for SFTP / SSH connection. You can find your port number in in Hosting Control Panel, on the Dashboard.

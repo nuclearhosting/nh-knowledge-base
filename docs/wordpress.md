@@ -50,7 +50,7 @@ With the "wp core download" command, you download the installation files to the 
 #### Creating a new wp-config.php file
 
 !!! hint
-	Before you start creating a wp-config file, [create a new MySQL Database](mysql_databases/) with a new database user first.
+	Before you start creating a wp-config file, [create a new MySQL Database](../mysql_databases/) with a new database user first.
 
 ```
 $ cd /web/dev/wp-cli
