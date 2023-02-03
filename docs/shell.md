@@ -110,6 +110,9 @@ Command is used to change default PHP version for ```php``` command. Parameter `
   - php7.2
   - php7.3
   - php7.4
+  - php8.0
+  - php8.1
+  - php8.2
 
 Example: To change default PHP version to PHP7.2 use: ```php_chooser php7.2```
 
