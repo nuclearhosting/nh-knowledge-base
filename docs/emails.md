@@ -140,6 +140,29 @@ Our IMAP servers support sharing of IMAP folders between different mailboxes on 
 
 Our IMAP servers support quota information check.
 
+### Configuring Automatic Trash and Junk Folders Prune
+
+Email management is an essential aspect of every business, and it is crucial to ensure that your email inbox remains clean and organized. One way to do this is by regularly deleting unwanted emails and pruning your mailbox's trash and junk folders. We provide our users with the option to configure automatic mailbox trash and junk folder prune, which makes the email management process more efficient and hassle-free.
+
+With this feature, users can set a specific time interval after which their mailbox's trash and junk folders will be automatically purged. This means that users no longer have to manually delete emails from these folders, saving them time and effort.
+
+The configuration of automatic mailbox trash and junk folder prune is available in Hosting Control Panel. Follow these simple steps:
+
+Step 1: Log in to your hosting control panel and navigate to the email settings section.
+
+Step 2: Select the mailbox for which you want to configure automatic trash and junk folder prune.
+
+Step 3: Click on the "Mail Filter" tab and look for the option to configure automatic mailbox trash and junk folder prune ("Purge Trash automatically after X days" and "Purge Junk automatically after X days").
+
+Step 4: Choose the time interval after which you want the mailbox's trash and junk folders to be purged. This can be set to a specific number of days.
+
+Step 5: Save your changes by clicking on the "Save" button, and the automatic mailbox trash and junk folder prune feature will be activated.
+
+It is important to note that while automatic mailbox trash and junk folder prune can help keep your mailbox organized, it is crucial to review the emails in your trash and junk folders before they are permanently deleted. This is because some emails may have been incorrectly classified as junk or may have been accidentally deleted and need to be restored.
+
+!!! note
+	Folders of these names will be purged automatically: 'Junk', 'Junk Email', 'SPAM', 'INBOX.SPAM', 'Trash', 'Papierkorb', 'Deleted Items', 'Deleted Messages', 'INBOX.Trash', 'INBOX.Papierkorb', 'INBOX.Deleted Messages'
+
 ## How to setup e-mail client to access my mailbox
 
 In general, you need to know Incoming server, Outgoing server (smtp) and your mailbox credentials.
