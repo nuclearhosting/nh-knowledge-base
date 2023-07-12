@@ -26,7 +26,6 @@ Start by logging in to the [Hosting Control Panel](https://my.nuclear.hosting). 
 
 ## Important links
 
- * [Nuclear.Hosting Community Board](https://community.nuclear.hosting)
  * [Nuclear.Hosting Support Team](https://nuclear.hosting/support/)
  * [Hosting Control Panel](https://my.nuclear.hosting)
  * [Hosting Tools](https://tools.nuclear.hosting)
