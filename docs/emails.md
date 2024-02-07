@@ -613,6 +613,10 @@ Bellow you can find a few SPF record examples:
 
 A more detailed information about SPF you can find in [SPF docummentation](http://www.openspf.org/SPF_Record_Syntax).
 
+## DMARC
+
+For more information on how DMARC works and how to set it up, [continue to this page](dmarc.md).
+
 ## Antispam Policies
 
 Every incomming email message is tested by several tests to identify or even to reject junk or otherwise defective correspondence, before is being delivered into mailbox. Performing some tests depends on the recipient's mailbox settings.  The following antispam tests are performed:
