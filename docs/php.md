@@ -14,10 +14,11 @@ PHP (an acronym for PHP: Hypertext Preprocessor) is a scripting language that’
 | PHP7.1 | ✓ | Deprecated, not developed since 2019, upgrade ASAP to 7.4 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo71.html) |
 | PHP7.2 | ✓ | Deprecated, not developed since 2020, upgrade ASAP to 7.4 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo72.html) |
 | PHP7.3 | ✓ | Deprecated, not developed since 2021, upgrade ASAP to 7.4 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo73.html) |
-| PHP7.4 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo74.html) |
-| PHP8.0 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo80.html) |
+| PHP7.4 | ✓ | Deprecated, not developed since 2022, upgrade ASAP to 8.2 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo74.html) |
+| PHP8.0 | ✓ | Deprecated, not developed since 2023, upgrade ASAP to 8.2 or higher | [phpinfo](http://denver.nuclearserver.xyz/phpinfo80.html) |
 | PHP8.1 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo81.html) |
 | PHP8.2 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo82.html) |
+| PHP8.3 | ✓ | Recommended for production usage | [phpinfo](http://denver.nuclearserver.xyz/phpinfo83.html) |
 
 <br />
 
@@ -25,7 +26,7 @@ PHP (an acronym for PHP: Hypertext Preprocessor) is a scripting language that’
 	We highly suggest you to always using newest PHP version for your website. Besides permormance reasons (newer PHP version has much more higher performance and radically can speed-up your website loading time), its security reasons and support from developers. Older PHP versions are hard to carry on on newest operating systems with latest upgrades.
 
 !!! important
-	PHP versions 5.6, 7.0, 7.1 and 7.2 are obsolete and no (or security) updates are released. We do not recommend using them, instead use one of the newer versions.
+	PHP versions 5.6, 7.0, 7.1, 7.2, 7.3 are obsolete and no (or security) updates are released. We do not recommend using them, instead use one of the newer versions.
 
 (1)Not all values in the example phpinfo must match the production environment. Some values differ for VIP and Basic Membership.
 
@@ -117,4 +118,4 @@ Every hosting / website can use different PHP versions (within supported PHP ver
 In your [Hosting Control Panel](https://my.nuclear.hosting) navigate to ```Sites``` and click on the website where you want to change PHP version on. In the ```PHP Version``` select a version you want to use and just click on the ```Save``` button.
 
 !!! note
-	Your website has to be prepared and support your chosen PHP. Eg. application made for PHP5.6 will not work with PHP7.3 probably. Before changing PHP version make sure your application is prepared.
+	Your website has to be prepared and support your chosen PHP. Eg. application made for PHP5.6 will not work with PHP7.4 probably. Before changing PHP version make sure your application is prepared.

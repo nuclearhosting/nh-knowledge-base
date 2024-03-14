@@ -63,6 +63,7 @@ Where XY is PHP version you want to execute your script by. Supported PHP versio
   - PHP8.0 - php80
   - PHP8.1 - php81
   - PHP8.2 - php82
+  - PHP8.3 - php83
 
 Examples:
 
