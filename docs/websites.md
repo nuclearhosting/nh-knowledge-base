@@ -179,7 +179,6 @@ Nuclear.Hosting allows you to host your website in many different geo-locations.
 | :---:       |    :---:    |    :---:      |    :---:      |    :---:      |
 | EU-FR1      | 🇪🇺Europe - France - Gravelines       | denver.nuclearserver.xyz   | 87.98.254.239 | 2001:41d0:303:c978::100 |
 | EU-GB1      | 🇪🇺Europe - United Kingdom - London   | london.nuclearserver.xyz   | 51.75.162.123 | 2001:41d0:801:2000::15b9 |
-| EU-PL1	  | 🇪🇺Europe - Poland - Warsaw		   | warsaw.nuclearserver.xyz	| 51.83.187.175 | 2001:41d0:601:1100::3afb |
 | EU-DE1	  | 🇪🇺Europe - Germany - Frankfurt	   | frankfurt.nuclearserver.xyz| 51.195.45.175 | 2001:41d0:701:1100::41a |
 | USA-US1	  | 🇺🇸USA - Virginia - Warrenton		   | boston.nuclearserver.xyz   | 51.81.80.188 | 2604:2dc0:101:200::95c |
 
