@@ -168,7 +168,7 @@ Unfortunately, many shared hosting companies do not address this risk. But for u
 
 On the other side, the absence of caching servers support we have fast SSD/NVMe disks on all our servers. We are also able to connect for you a special RAM-Disk which is a dedicated piece of RAM memory connected as a regular directory (dedicated for you) where you can place your cache files. The advantage of this solution is that it's very similar to memcached or redis server where cached data are placed into RAM.
 
-### WebServers Geo-Locations
+### Web servers Geo-Locations
 
 Nuclear.Hosting allows you to host your website in many different geo-locations. This feature is available for all **VIP Memberships**. Are your customers located primarily in 🇪🇺Europe or in the 🇺🇸USA? Are your traffic comes mostly from the 🇺🇸USA or from 🇪🇺Europe? Speed up your website and decrease the load time of your websites. Place your website in the location closest to your customers and visitors. In the table below you can find all our geo-location where you can create your web hosting. We continualy adding a new geo-locations.
 
